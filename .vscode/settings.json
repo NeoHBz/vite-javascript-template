@@ -14,5 +14,11 @@
     "**/dist": true
   },
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "tailwindCSS.experimental.configFile": "./tailwind.config.js",
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "javascript": "javascript",
+    "javascriptreact": "javascriptreact"
+  }
 }
