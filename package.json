@@ -3,16 +3,34 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "A minimal Vite + React template with Tailwind CSS and modern tooling",
+  "keywords": [
+    "vite",
+    "react",
+    "tailwind",
+    "template",
+    "javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neohbz/vite-javascript-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neohbz/vite-javascript-template/issues"
+  },
+  "homepage": "https://github.com/neohbz/vite-javascript-template#readme",
   "author": {
     "name": "NeoHBz",
     "email": "neohbz@gmail.com",
     "url": "https://neohbz.com"
   },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "setup": "node setup-template.js"
   },
   "dependencies": {
     "react": "^19.1.1",

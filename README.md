@@ -1,12 +1,60 @@
-# React + Vite
+# Vite JavaScript Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal, production-ready Vite + React template with modern tooling and best practices.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ **Vite** - Lightning fast build tool
+- ⚛️ **React 19** - Latest React with concurrent features
+- 🎨 **Tailwind CSS v3** - Utility-first CSS framework
+- 📏 **ESLint** - Modern flat config with React rules
+- 💅 **Prettier** - Code formatting
+- 🔧 **VS Code** - Optimized settings and extensions
 
-## Expanding the ESLint configuration
+## Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone the template
+git clone https://github.com/neohbz/vite-javascript-template.git my-app
+cd my-app
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Lint code with ESLint
+
+## Project Structure
+
+```
+├── src/
+│   ├── App.jsx          # Main App component
+│   ├── main.jsx         # React entry point
+│   └── index.css        # Tailwind CSS imports
+├── public/              # Static assets
+├── index.html           # HTML template
+└── vite.config.js       # Vite configuration
+```
+
+## Customization
+
+### Tailwind CSS
+Modify [`tailwind.config.js`](tailwind.config.js) to customize your design system.
+
+### ESLint Rules
+Update [`eslint.config.js`](eslint.config.js) to adjust linting rules.
+
+### Prettier
+Configure code formatting in [`.prettierrc`](.prettierrc).
+
+## License
+
+MIT © [NeoHBz](https://neohbz.com)
