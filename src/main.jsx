@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")).render(
         href="https://neohbz.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-400 hover:text-gray-800 transition"
+        className="text-gray-400 transition hover:text-gray-800"
       >
         with ❤️ by neohbz
       </a>
