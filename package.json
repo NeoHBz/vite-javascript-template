@@ -28,9 +28,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:check": "eslint .",
+    "format": "prettier --check '**/*.{js,jsx,ts,tsx,json}'",
+    "format:fix": "prettier --write '**/*.{js,jsx,ts,tsx,json}'",
     "preview": "vite preview",
-    "setup": "node setup-template.js"
+    "setup": "node setup-template.js",
+    "prepare": "husky",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -48,10 +53,21 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "3",
     "vite": "^7.1.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css}": [
+      "prettier --write"
+    ]
   }
 }

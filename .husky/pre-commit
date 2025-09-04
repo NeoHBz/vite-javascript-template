@@ -1,0 +1,18 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# try bun first, then npm/pnpm/yarn, then direct node_modules binary
+if command -v bun >/dev/null 2>&1; then
+  bunx run precommit || bun run precommit
+elif command -v npm >/dev/null 2>&1; then
+  npm run precommit
+elif command -v pnpm >/dev/null 2>&1; then
+  pnpm run precommit
+elif command -v yarn >/dev/null 2>&1; then
+  yarn precommit
+elif [ -x "./node_modules/.bin/lint-staged" ]; then
+  ./node_modules/.bin/lint-staged
+else
+  echo "No package manager found (bun, npm, pnpm or yarn). Install one." >&2
+  exit 1
+fi
