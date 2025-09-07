@@ -38,6 +38,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@radix-ui/react-checkbox": "^1.3.3",
     "@radix-ui/react-primitive": "^2.1.3",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
